@@ -13,4 +13,4 @@ Dicoding Submission Belajar Dasar Pemrograman Website
 
 ## Certificate
  <img src="img/certificate.jpg" alt="Gambar 1" height="200"/> 
- [Link](https://www.dicoding.com/certificates/98XWVMKWJPM3)
+  Link : https://www.dicoding.com/certificates/98XWVMKWJPM3
