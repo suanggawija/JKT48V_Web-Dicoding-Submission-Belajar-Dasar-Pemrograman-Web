@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-inline: auto;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 1rem 5rem;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img{
+    width: 40px;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header nav ul li{
+    list-style-type: none;
+}
+
+header nav ul li a{
+    color: rgb(66, 66, 66);
+    padding: .8rem 1.5rem;
+    /* background-color: black; */
+    transition: all .2s ease-in-out ;
+}
+
+
+header nav ul li:hover a{
+    color: rgb(255, 255, 255);
+    background-color: rgb(233, 0, 0);
+}
+
+
+main {
+    width: 100%;
+    padding: 9rem 4rem 2rem ;
+    display: flex;
+}
+
+main #content{
+    flex: 3;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+main #content h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(233, 0, 0);
+    margin-bottom: 2rem;
+}
+
+main #content article{
+    display: flex;
+    padding: 3rem 2rem 3rem 1rem;
+    border-radius: 24px;
+    box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+    gap: 12px 12px;
+}
+
+main #content article img {
+    width: 120px;
+    object-fit: cover;
+    object-position: center;
+    flex: 1;
+    position: relative;
+}
+
+main #content article .description {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+main #content article .description h2{
+    color: red;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+main #content article .description p{
+    color: gray;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+main #content article .description .info{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+main #content article .description .info div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(71, 71, 71);
+    padding: 0.5rem 0.8rem;
+    color: white;
+}
+main #content article .description .info div small{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+main #content article .description .info div .info-bold{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+main aside{
+    flex: 1;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+main aside h2{
+    color: rgb(233, 0, 0);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+main aside p{
+    color: gray;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+main aside p .bold{
+    color: rgb(233, 0, 0);
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+footer{
+    display: flex;
+    padding: 2rem 4rem;
+    width: 100%;
+    background-color: rgb(71, 71, 71);
+}
+footer .logo img{
+    width: 40px;
+}
+footer ul{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+footer ul li{
+    list-style-type: none;
+}
+
+footer ul li a{
+    color: wheat;
+}
+
+@media screen and (max-width: 1100px) {
+    header{
+        padding: 1rem 1rem;
+    }
+    header nav ul{
+        gap: 0.5rem 0.5rem;
+        flex-wrap: wrap;
+        justify-content: left;
+        margin-left: 12px;
+    }
+    header nav ul li a{
+        font-size: 0.7rem;
+    }
+    main {
+        flex-direction: column;
+        padding: 9rem 1rem 2rem ;
+    }
+
+    main #content h1{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    main #content article{
+        flex-direction: column;
+    }
+    main #content article img {
+        width: 100%;
+    }
+    main #content article .description h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    main #content article .description p{
+        font-size: 1rem;
+        text-align: center;
+    }
+    main #content article .description{
+        justify-content: center;
+        align-items: center;
+    }
+    main #content article .description .info div .info-bold{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    main aside{
+        padding-left: 0px;
+        margin-bottom: 2rem;
+    }
+    footer{
+        padding: 2rem 1rem;
+    }
+    footer ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+}
